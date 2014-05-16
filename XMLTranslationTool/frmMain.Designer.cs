@@ -69,7 +69,7 @@
             // 
             this.tbTranslatedText1.AcceptsReturn = true;
             this.tbTranslatedText1.AcceptsTab = true;
-            this.tbTranslatedText1.Location = new System.Drawing.Point(12, 177);
+            this.tbTranslatedText1.Location = new System.Drawing.Point(12, 54);
             this.tbTranslatedText1.Multiline = true;
             this.tbTranslatedText1.Name = "tbTranslatedText1";
             this.tbTranslatedText1.Size = new System.Drawing.Size(300, 300);
@@ -82,7 +82,7 @@
             this.cbChoosenLanguage1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbChoosenLanguage1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbChoosenLanguage1.FormattingEnabled = true;
-            this.cbChoosenLanguage1.Location = new System.Drawing.Point(73, 150);
+            this.cbChoosenLanguage1.Location = new System.Drawing.Point(73, 27);
             this.cbChoosenLanguage1.Name = "cbChoosenLanguage1";
             this.cbChoosenLanguage1.Size = new System.Drawing.Size(138, 21);
             this.cbChoosenLanguage1.TabIndex = 1;
@@ -90,7 +90,7 @@
             // 
             // btnLanguagesNew
             // 
-            this.btnLanguagesNew.Location = new System.Drawing.Point(217, 151);
+            this.btnLanguagesNew.Location = new System.Drawing.Point(217, 28);
             this.btnLanguagesNew.Name = "btnLanguagesNew";
             this.btnLanguagesNew.Size = new System.Drawing.Size(39, 20);
             this.btnLanguagesNew.TabIndex = 4;
@@ -104,16 +104,16 @@
             this.cbKeyWords.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbKeyWords.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbKeyWords.FormattingEnabled = true;
-            this.cbKeyWords.Location = new System.Drawing.Point(684, 150);
+            this.cbKeyWords.Location = new System.Drawing.Point(684, 27);
             this.cbKeyWords.Name = "cbKeyWords";
-            this.cbKeyWords.Size = new System.Drawing.Size(150, 21);
+            this.cbKeyWords.Size = new System.Drawing.Size(240, 21);
             this.cbKeyWords.TabIndex = 5;
             this.cbKeyWords.SelectedIndexChanged += new System.EventHandler(this.cbKeyWords_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(627, 153);
+            this.label2.Location = new System.Drawing.Point(627, 30);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 13);
             this.label2.TabIndex = 6;
@@ -121,9 +121,9 @@
             // 
             // btnKeyWordsNew
             // 
-            this.btnKeyWordsNew.Location = new System.Drawing.Point(684, 176);
+            this.btnKeyWordsNew.Location = new System.Drawing.Point(684, 53);
             this.btnKeyWordsNew.Name = "btnKeyWordsNew";
-            this.btnKeyWordsNew.Size = new System.Drawing.Size(70, 20);
+            this.btnKeyWordsNew.Size = new System.Drawing.Size(100, 20);
             this.btnKeyWordsNew.TabIndex = 7;
             this.btnKeyWordsNew.Text = "New";
             this.btnKeyWordsNew.UseVisualStyleBackColor = true;
@@ -132,7 +132,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 153);
+            this.label3.Location = new System.Drawing.Point(12, 30);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 13);
             this.label3.TabIndex = 8;
@@ -144,7 +144,7 @@
             this.cbChoosenLanguage2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbChoosenLanguage2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbChoosenLanguage2.FormattingEnabled = true;
-            this.cbChoosenLanguage2.Location = new System.Drawing.Point(382, 150);
+            this.cbChoosenLanguage2.Location = new System.Drawing.Point(382, 27);
             this.cbChoosenLanguage2.Name = "cbChoosenLanguage2";
             this.cbChoosenLanguage2.Size = new System.Drawing.Size(138, 21);
             this.cbChoosenLanguage2.TabIndex = 9;
@@ -153,7 +153,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(318, 153);
+            this.label4.Location = new System.Drawing.Point(318, 30);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 10;
@@ -163,7 +163,7 @@
             // 
             this.tbTranslatedText2.AcceptsReturn = true;
             this.tbTranslatedText2.AcceptsTab = true;
-            this.tbTranslatedText2.Location = new System.Drawing.Point(321, 177);
+            this.tbTranslatedText2.Location = new System.Drawing.Point(321, 54);
             this.tbTranslatedText2.Multiline = true;
             this.tbTranslatedText2.Name = "tbTranslatedText2";
             this.tbTranslatedText2.Size = new System.Drawing.Size(300, 300);
@@ -172,7 +172,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(526, 151);
+            this.button1.Location = new System.Drawing.Point(526, 28);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(39, 20);
             this.button1.TabIndex = 12;
@@ -183,7 +183,7 @@
             // lblTranslation2
             // 
             this.lblTranslation2.AutoSize = true;
-            this.lblTranslation2.Location = new System.Drawing.Point(318, 480);
+            this.lblTranslation2.Location = new System.Drawing.Point(318, 357);
             this.lblTranslation2.Name = "lblTranslation2";
             this.lblTranslation2.Size = new System.Drawing.Size(34, 13);
             this.lblTranslation2.TabIndex = 13;
@@ -192,7 +192,7 @@
             // lblTranslation1
             // 
             this.lblTranslation1.AutoSize = true;
-            this.lblTranslation1.Location = new System.Drawing.Point(12, 480);
+            this.lblTranslation1.Location = new System.Drawing.Point(12, 357);
             this.lblTranslation1.Name = "lblTranslation1";
             this.lblTranslation1.Size = new System.Drawing.Size(34, 13);
             this.lblTranslation1.TabIndex = 14;
@@ -200,7 +200,7 @@
             // 
             // btnSave1
             // 
-            this.btnSave1.Location = new System.Drawing.Point(262, 151);
+            this.btnSave1.Location = new System.Drawing.Point(262, 28);
             this.btnSave1.Name = "btnSave1";
             this.btnSave1.Size = new System.Drawing.Size(50, 20);
             this.btnSave1.TabIndex = 15;
@@ -210,7 +210,7 @@
             // 
             // btnSave2
             // 
-            this.btnSave2.Location = new System.Drawing.Point(571, 151);
+            this.btnSave2.Location = new System.Drawing.Point(571, 28);
             this.btnSave2.Name = "btnSave2";
             this.btnSave2.Size = new System.Drawing.Size(50, 20);
             this.btnSave2.TabIndex = 16;
@@ -225,7 +225,7 @@
             this.menuHelp});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(972, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(940, 24);
             this.menuStrip1.TabIndex = 17;
             this.menuStrip1.Text = "menuStrip";
             // 
@@ -305,9 +305,9 @@
             // 
             // btnChange
             // 
-            this.btnChange.Location = new System.Drawing.Point(764, 176);
+            this.btnChange.Location = new System.Drawing.Point(824, 53);
             this.btnChange.Name = "btnChange";
-            this.btnChange.Size = new System.Drawing.Size(70, 20);
+            this.btnChange.Size = new System.Drawing.Size(100, 20);
             this.btnChange.TabIndex = 18;
             this.btnChange.Text = "Change";
             this.btnChange.UseVisualStyleBackColor = true;
@@ -317,16 +317,16 @@
             // 
             this.tbTestResult.AcceptsReturn = true;
             this.tbTestResult.AcceptsTab = true;
-            this.tbTestResult.Location = new System.Drawing.Point(630, 331);
+            this.tbTestResult.Location = new System.Drawing.Point(630, 131);
             this.tbTestResult.Multiline = true;
             this.tbTestResult.Name = "tbTestResult";
-            this.tbTestResult.Size = new System.Drawing.Size(300, 146);
+            this.tbTestResult.Size = new System.Drawing.Size(300, 223);
             this.tbTestResult.TabIndex = 19;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(627, 282);
+            this.label1.Location = new System.Drawing.Point(621, 82);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 21;
@@ -335,7 +335,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(627, 308);
+            this.label5.Location = new System.Drawing.Point(621, 108);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(51, 13);
             this.label5.TabIndex = 23;
@@ -343,21 +343,21 @@
             // 
             // tbTestKeyWord
             // 
-            this.tbTestKeyWord.Location = new System.Drawing.Point(690, 305);
+            this.tbTestKeyWord.Location = new System.Drawing.Point(684, 105);
             this.tbTestKeyWord.Name = "tbTestKeyWord";
             this.tbTestKeyWord.Size = new System.Drawing.Size(167, 20);
             this.tbTestKeyWord.TabIndex = 24;
             // 
             // tbTestLanguage
             // 
-            this.tbTestLanguage.Location = new System.Drawing.Point(690, 279);
+            this.tbTestLanguage.Location = new System.Drawing.Point(684, 79);
             this.tbTestLanguage.Name = "tbTestLanguage";
             this.tbTestLanguage.Size = new System.Drawing.Size(167, 20);
             this.tbTestLanguage.TabIndex = 25;
             // 
             // btnTest
             // 
-            this.btnTest.Location = new System.Drawing.Point(863, 282);
+            this.btnTest.Location = new System.Drawing.Point(857, 82);
             this.btnTest.Name = "btnTest";
             this.btnTest.Size = new System.Drawing.Size(67, 42);
             this.btnTest.TabIndex = 26;
@@ -369,7 +369,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(972, 677);
+            this.ClientSize = new System.Drawing.Size(940, 382);
             this.Controls.Add(this.btnTest);
             this.Controls.Add(this.tbTestLanguage);
             this.Controls.Add(this.tbTestKeyWord);
