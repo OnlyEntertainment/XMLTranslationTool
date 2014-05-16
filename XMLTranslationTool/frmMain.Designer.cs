@@ -56,6 +56,12 @@
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.btnChange = new System.Windows.Forms.Button();
+            this.tbTestResult = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbTestKeyWord = new System.Windows.Forms.TextBox();
+            this.tbTestLanguage = new System.Windows.Forms.TextBox();
+            this.btnTest = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -307,11 +313,69 @@
             this.btnChange.UseVisualStyleBackColor = true;
             this.btnChange.Click += new System.EventHandler(this.btnChange_Click);
             // 
+            // tbTestResult
+            // 
+            this.tbTestResult.AcceptsReturn = true;
+            this.tbTestResult.AcceptsTab = true;
+            this.tbTestResult.Location = new System.Drawing.Point(630, 331);
+            this.tbTestResult.Multiline = true;
+            this.tbTestResult.Name = "tbTestResult";
+            this.tbTestResult.Size = new System.Drawing.Size(300, 146);
+            this.tbTestResult.TabIndex = 19;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(627, 282);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Language";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(627, 308);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(51, 13);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "KeyWord";
+            // 
+            // tbTestKeyWord
+            // 
+            this.tbTestKeyWord.Location = new System.Drawing.Point(690, 305);
+            this.tbTestKeyWord.Name = "tbTestKeyWord";
+            this.tbTestKeyWord.Size = new System.Drawing.Size(167, 20);
+            this.tbTestKeyWord.TabIndex = 24;
+            // 
+            // tbTestLanguage
+            // 
+            this.tbTestLanguage.Location = new System.Drawing.Point(690, 279);
+            this.tbTestLanguage.Name = "tbTestLanguage";
+            this.tbTestLanguage.Size = new System.Drawing.Size(167, 20);
+            this.tbTestLanguage.TabIndex = 25;
+            // 
+            // btnTest
+            // 
+            this.btnTest.Location = new System.Drawing.Point(863, 282);
+            this.btnTest.Name = "btnTest";
+            this.btnTest.Size = new System.Drawing.Size(67, 42);
+            this.btnTest.TabIndex = 26;
+            this.btnTest.Text = "Test";
+            this.btnTest.UseVisualStyleBackColor = true;
+            this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(972, 677);
+            this.Controls.Add(this.btnTest);
+            this.Controls.Add(this.tbTestLanguage);
+            this.Controls.Add(this.tbTestKeyWord);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tbTestResult);
             this.Controls.Add(this.btnChange);
             this.Controls.Add(this.btnSave2);
             this.Controls.Add(this.btnSave1);
@@ -370,6 +434,12 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.Button btnChange;
+        private System.Windows.Forms.TextBox tbTestResult;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox tbTestKeyWord;
+        private System.Windows.Forms.TextBox tbTestLanguage;
+        private System.Windows.Forms.Button btnTest;
     }
 }
 

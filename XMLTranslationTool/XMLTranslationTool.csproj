@@ -83,6 +83,10 @@
       <Project>{a2eda8cc-6381-4c4f-b7f4-460ce2c7d4a9}</Project>
       <Name>CT_Additions</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SimpleTranslation\SimpleXMLTranslation.csproj">
+      <Project>{57524b69-37a3-4be7-bd4b-79139c088a75}</Project>
+      <Name>SimpleXMLTranslation</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

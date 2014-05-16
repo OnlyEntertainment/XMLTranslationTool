@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CT_Additions;
 using System.Xml;
+using SimpleXMLTranslation;
 
 namespace XMLTranslationTool
 {
@@ -42,7 +43,7 @@ namespace XMLTranslationTool
 
         private void NewLanguage(ComboBox cbLanguage)
         {
-            String newLanguage = frmInputBox.NewInput("New Language", "Please enter the new language");
+            String newLanguage = frmInputBox.NewInput("New Language", "Please enter the new language").ToLower();
 
             if (newLanguage != "" && !languages.Contains(newLanguage))
             {
@@ -75,23 +76,25 @@ namespace XMLTranslationTool
             cbChoosenLanguage1.SelectedIndex = cbChoosenLanguage1.Items.IndexOf(tmpLang1);
             cbChoosenLanguage2.SelectedIndex = cbChoosenLanguage2.Items.IndexOf(tmpLang2);
 
+            String tmpKeyWord = cbKeyWords.Text;
             cbKeyWords.Items.Clear();
             foreach (String keyWord in keyWords)
             {
                 cbKeyWords.Items.Add(keyWord);
             }
+            cbKeyWords.SelectedIndex = cbKeyWords.Items.IndexOf(tmpKeyWord);
 
             this.Text = "XML Translation Tool - " + filePath + fileName;
 
             if (cbChoosenLanguage1.Text != "") choosenTranslation1 = new Dictionary<string, string>(translations[cbChoosenLanguage1.Text]);
-            if (cbChoosenLanguage1.Text != "") choosenTranslation2 = new Dictionary<string, string>(translations[cbChoosenLanguage2.Text]);
+            if (cbChoosenLanguage2.Text != "") choosenTranslation2 = new Dictionary<string, string>(translations[cbChoosenLanguage2.Text]);
             ShowTranslation(1);
             ShowTranslation(2);
         }
 
         private void btnKeyWordsNew_Click(object sender, EventArgs e)
         {
-            String newKeyword = frmInputBox.NewInput("New Language", "Please enter the new language");
+            String newKeyword = frmInputBox.NewInput("New Language", "Please enter the new language").ToLower();
 
 
             if (newKeyword != "" && !keyWords.Contains(newKeyword) && isValidXMLName(newKeyword))
@@ -133,8 +136,8 @@ namespace XMLTranslationTool
             }
         }
 
-        private void btnLanguagesNew1_Click(object sender, EventArgs e) { NewLanguage(cbChoosenLanguage1); }
-        private void btnLanguagesNew2_Click(object sender, EventArgs e) { NewLanguage(cbChoosenLanguage2); }
+        private void btnLanguagesNew1_Click(object sender, EventArgs e) { NewLanguage(cbChoosenLanguage1); ShowTranslation(1); }
+        private void btnLanguagesNew2_Click(object sender, EventArgs e) { NewLanguage(cbChoosenLanguage2); ShowTranslation(2); }
 
         private void cbChoosenLanguage1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -368,6 +371,13 @@ namespace XMLTranslationTool
                 case "z": return true;
                 default: return false;
             }
+        }
+
+        private void btnTest_Click(object sender, EventArgs e)
+        {
+            SimpleTranslation trans = new SimpleTranslation(filePath, fileName,tbTestLanguage.Text);
+
+            tbTestResult.Text = trans.GetText(tbTestKeyWord.Text);
         }
     }
 }
