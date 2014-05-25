@@ -375,7 +375,11 @@ namespace XMLTranslationTool
 
         private void btnTest_Click(object sender, EventArgs e)
         {
-            SimpleTranslation trans = new SimpleTranslation(filePath, fileName,tbTestLanguage.Text);
+            SimpleTranslation trans = new SimpleTranslation(filePath, fileName);
+            
+            trans.SetLanguage(tbTestLanguage.Text);
+
+            //SimpleTranslation trans = new SimpleTranslation(filePath, fileName,tbTestLanguage.Text);
 
             tbTestResult.Text = trans.GetText(tbTestKeyWord.Text);
         }

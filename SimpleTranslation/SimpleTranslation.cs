@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
 
 namespace SimpleXMLTranslation
@@ -17,7 +16,8 @@ namespace SimpleXMLTranslation
 
         private String currentLanguage;
 
-        public SimpleTranslation(String filePath, String fileName) { new SimpleTranslation(filePath, fileName, "English"); }
+        public SimpleTranslation(String filePath, String fileName) : this(filePath,fileName,"English") {}
+        
         public SimpleTranslation(String filePath, String fileName, String language)
         {
             translations = new Dictionary<string, Dictionary<string, string>>();
